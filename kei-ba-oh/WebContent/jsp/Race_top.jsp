@@ -36,8 +36,8 @@ $(function() {
 	  <label class="tab_item" for="races_tab">レース一覧</label>
 	  <input id="weekendrace_tab" type="radio" name="tab_item">
 	  <label class="tab_item" for="weekendrace_tab">今週末のレース</label>
-	  <input id="free_search_tab" type="radio" name="tab_item">
-	  <label class="tab_item" for="free_search_tab">フリー検索</label>
+	  <input id="scraping_tab" type="radio" name="tab_item">
+	  <label class="tab_item" for="scraping_tab">フリー検索</label>
 <!-- タブ END -->
 
 
@@ -83,10 +83,10 @@ $(function() {
 	  </div>
 <!-- 今週末のレース END -->
 
-<!-- フリー検索 START -->
-	  <div class="tab_content" id="free_search_content">
+<!--スクレイピング実行タグ START-->
+	  <div class="tab_content" id="scraping_content">
 	    <div class="tab_content_description">
-	<!-- 検索ボックス -->
+	<!-- URL入力フォーム -->
 		<form id="form2" action="/keiba/RaceTop_Servlet" method="get">
 			<input id="sbox2"  id="s" name="s" type="text" placeholder="フリーワードを入力"/>
 			<button type="submit" id="sbtn2"><i class="fas fa-search"></i></button>
@@ -94,7 +94,7 @@ $(function() {
 
 	    </div>
 	  </div>
-<!-- フリー検索 END -->
+<!-- スクレイピング実行タグ END -->
 
 	</div>
 </body>

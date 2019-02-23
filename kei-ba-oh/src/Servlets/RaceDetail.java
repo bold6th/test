@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import Beans.DAO;
 import Beans.RaceDetailForm;
-import Beans.Scraping;
 
 /**
  * Servlet implementation class RaceDetail
@@ -48,7 +47,7 @@ public class RaceDetail extends HttpServlet {
 
 		//スクレイピングにより詳細情報を取得してみる
 		System.out.println("スクレイピング直前");
-		rdf = new Scraping().doScraping(rdf,"https://racev3.netkeiba.com/race/result.html?race_id=201905040911&rf=race_list");
+		//rdf = new Scraping().doScraping(rdf,"https://racev3.netkeiba.com/race/result.html?race_id=201905040911&rf=race_list");
 
 		//払い戻し情報とオッズを取得
 		rdf = new DAO().getReturnAndOdds(rdf);
