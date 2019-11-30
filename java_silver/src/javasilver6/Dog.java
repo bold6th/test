@@ -6,7 +6,7 @@ public class Dog {
 //		System.out.println("誕生しました");
 //	}
 	Dog(String s){
-		System.out.println(s + "誕生しました。");
+		System.out.println(s + "あいうえおhhhhh誕生しました。");
 	}
 
 }
