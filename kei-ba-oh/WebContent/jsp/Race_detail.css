@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+	font-family:Verdana, "ＭＳ Ｐゴシック", sans-serif;
+	font-size:80%;
+}
+
+table{
+	border:1px gray solid;
+	margin:15px 0 20px;
+	border-collapse: collapse;
+
+}
+
+th{
+	background-color:#EFEFD9;
+	border:1px gray solid;
+	font-weight:normal;
+}
+
+td{
+	border:1px gray solid;
+}
+
+.center{
+	margin:  0 auto;
+	width:800px;
+}
+
+.text-left{
+	margin:  0 auto;
+	float:left;
+	width:300px;
+	height:100px;
+}
+
+.text-right{
+	margin:  0 auto;
+	padding-left:150px;
+	width:300px;
+	height:100px;
+}
+
+table.return{
+	height:150px;
+	width:180px;
+}
+
+
