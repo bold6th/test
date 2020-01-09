@@ -6,14 +6,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class Scraping_test {
+public class Scraping_test2 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		try {
 
             //Document A = Jsoup.connect("url").get(); urlにスクレイピング対象
-            Document doc = Jsoup.connect("https://db.netkeiba.com/race/201905040911/").get();
+            Document doc = Jsoup.connect("https://race.netkeiba.com/?pid=race&id=p201906050802&mode=top").get();
 
             //Elements B = A.select("タグ"); この形でソースに含まれるタグで指定された範囲を書き出す。
             Elements elm = doc.select("td");
@@ -29,8 +29,6 @@ public class Scraping_test {
             e.printStackTrace();
         }
     }
-
-
-	}
+}
 
 
